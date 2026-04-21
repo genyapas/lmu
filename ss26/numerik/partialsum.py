@@ -15,6 +15,7 @@ values = list()
 for N in range (0, 81):
     values.append(Sn(x, N))
 
+print(values[-1])
 fig, ax = plt.subplots()
 
 N = list(range(81))
