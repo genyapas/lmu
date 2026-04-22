@@ -13,7 +13,7 @@ def test_precision(x, dtype):
         k += 1
     return psum
 
-x_val = -16
+x_val = -8
 print(f"Exakt:   {np.exp(x_val):.5e}")
 print(f"float32: {test_precision(x_val, np.float32):.5e}")
 print(f"float64: {test_precision(x_val, np.float64):.5e}")
