@@ -1,17 +1,14 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-#x = np.linspace(-10e-13, 10e-13, 10000)
-#y = (np.exp(x)-1)/np.exp(np.log(x))
-
-#fig, ax = plt.subplots()
-#ax.plot(x, y)
-#plt.show()
-###
-z = np.logspace(-16, 1, 1000)
-w = (np.exp(z)-1)/np.log(np.exp(z))
+x = np.linspace(1e-17, 2e-15, 100000)
+y = (np.exp(x)-1)/np.exp(np.log(x))
 
 fig, ax = plt.subplots()
-ax.plot(z, w)
-#plt.show()
-plt.savefig('bildlnexp1.png')
+ax.plot(x, y)
+
+w = (np.exp(x)-1)/np.log(np.exp(x))
+
+ax.plot(x, w)
+
+plt.show()
