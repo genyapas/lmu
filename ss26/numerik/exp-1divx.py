@@ -6,4 +6,5 @@ y = (np.exp(x)-1)/x
 
 fig, ax = plt.subplots()
 ax.plot(x, y)
-plt.show()
+plt.savefig('bildexp-1.png')
+# plt.show()
